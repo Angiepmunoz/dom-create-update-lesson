@@ -5,9 +5,9 @@ const bagsProductLi = document.createElement("li");
 // what is the parent element
 // attach it to dom
 
-// const ol = document.querySelector("ol");
+const ol = document.querySelector("ol");
 // console.log(ol);
-// ol.setAttribute("style", "grid-template-rows: repeat(7, 1fr);");
+ol.setAttribute("style", "grid-template-rows: repeat(7, 1fr);");
 
 // append() - places element as the last one in list of nodes (adds el as the last child to parent el) - child to the el you called the method on
 // prepend() - adds el as the first child to the parent el) - child to the el you called the method on
@@ -17,14 +17,14 @@ const bagsProductLi = document.createElement("li");
 //add li to the dom
 // calling the method on the el to the left of the dot notation
 // argument is the el we're adding
-// ol.append(bagsProductLi);
+ol.append(bagsProductLi);
 // ol.prepend(bagsProductLi);
 
 // add text
 bagsProductLi.innerText = "Bags";
 
 // add class to bags li
-bagsProductLi.setAttribute("class", "product group");
+bagsProductLi.setAttribute("class", "product");
 
 bagsProductLi.innerText += " & Wallets";
 
@@ -85,3 +85,11 @@ for (let i = 0; i < aText.length; i++) {
 
   aTag.innerText = aText[i];
 }
+
+// bagsProductLi.classList.add("group");
+bagsProductLi.classList.remove("product");
+
+// if the class exists on the el, toggle removes it
+// if the class does not exist on the el, toggle adds it
+bagsProductLi.classList.toggle("product");
+bagsProductLi.classList.toggle("product");
