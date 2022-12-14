@@ -1,25 +1,24 @@
 /* Importing font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: Quicksand;
-    /* color: white; */
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Quicksand;
+  /* color: white; */
 }
 
 body {
-    background-color: lightgrey;
-
+  background-color: lightgrey;
 }
 
 /* Container Layout Styling */
 .container {
-    height: 100vh;
-    /* border: 2px solid red; */
-    display: grid;
-    grid-template-rows: 1fr 5fr .5fr;
-    min-height: 700px;
+  height: 100vh;
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-rows: 1fr 5fr 0.5fr;
+  min-height: 700px;
 }
 
 /* header, #content, footer {
@@ -28,155 +27,152 @@ body {
 
 /* Header styling */
 header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 h1 {
-    font-size: 1.5rem;
-    text-align: center;
+  font-size: 1.5rem;
+  text-align: center;
 
-    display: grid;
-    align-content: center;
+  display: grid;
+  align-content: center;
 }
 
 ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-left: 0;
-    /* border: 1px solid green; */
-    list-style-type: none;
-    text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 0;
+  /* border: 1px solid green; */
+  list-style-type: none;
+  text-align: center;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 a:hover {
-    color: red;
+  color: red;
 }
 
 /* li {
     border: 1px solid gold;
 } */
 
-
 /* #Content styling */
-#content{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+#content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
 
-aside, main {
-    /* border: 2px solid cyan; */
-    height: 100%;
-    background-color: grey;
+aside,
+main {
+  /* border: 2px solid cyan; */
+  height: 100%;
+  background-color: grey;
 }
 
 aside {
-    border-right: 2px solid black;
-    overflow: scroll;
+  border-right: 2px solid black;
+  overflow: scroll;
 }
-
 
 /* Aside styling */
 ol {
-    height: 100%;
-    list-style-type: none;
-    padding-left: 0;
-    text-align: center;
-    /* border: 2px solid hotpink; */
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100%;
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+  /* border: 2px solid hotpink; */
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 ol li {
-    display: grid;
-    align-content: center;
+  display: grid;
+  align-content: center;
 }
 
 ol li:hover {
-    background-color: aquamarine;
+  background-color: aquamarine;
 }
-
 
 /* Main styling */
 main {
-    overflow: scroll;
-    height: 100%;
+  overflow: scroll;
+  height: 100%;
 }
 
 h2 {
-    text-align: center;
-    padding-top: 10px;
-    font-size: 1.2rem;
-    height: 10%;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.2rem;
+  height: 10%;
 }
 
 form {
-    height: 90%;
-    /* border: 2px solid wheat; */
-    display: grid;
-    
+  height: 90%;
+  /* border: 2px solid wheat; */
+  display: grid;
 }
 
-input[type="text"], textarea {
-    width: 50%;
-    margin: 1px auto;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 3px;
-    box-shadow: inset 1px 2px 2px black;
+input[type="text"],
+textarea {
+  width: 50%;
+  margin: 1px auto;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: inset 1px 2px 2px black;
 }
 
-input:focus, textarea:focus {
-    outline: none;
+input:focus,
+textarea:focus {
+  outline: none;
 }
-
 
 button {
-    width: 25%;
-    margin: 5px auto;
-    background-color: black;
-    color: white;
-    border: 1px solid cyan;
-    border-radius: 5px;
-    cursor: pointer;
+  width: 25%;
+  margin: 5px auto;
+  background-color: black;
+  color: white;
+  border: 1px solid cyan;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: aquamarine;
-    color: black;
+  background-color: aquamarine;
+  color: black;
 }
 
 /* Footer Styling */
 footer {
-    display: grid;
-    align-content: center;
-    text-align: center;
+  display: grid;
+  align-content: center;
+  text-align: center;
 }
-
 
 /* Mobile view  styling */
 @media (max-width: 600px) {
-    aside {
-        display: none;
-    }
+  aside {
+    display: none;
+  }
 
-    #content {
-        grid-template-columns: 1fr;
-    }
+  #content {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media (max-width: 530px){
-    ul {
-        display: none;
-    }
-    header {
-        grid-template-columns: 1fr;
-        align-content: center;
-    }
+@media (max-width: 530px) {
+  ul {
+    display: none;
+  }
+  header {
+    grid-template-columns: 1fr;
+    align-content: center;
+  }
 }
